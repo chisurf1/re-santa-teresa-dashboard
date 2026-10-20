@@ -23,7 +23,7 @@ details{border-bottom:1px solid var(--ln);padding:8px 0}summary{min-height:44px;
 </style></head><body><div class="wrap">
 <header><h1>Santa Teresa · Mal País Buy Watch</h1><div class="sub">Finished homes · ≤$1M · 3bd/2ba + pool · titled · Santa Teresa / Mal País / Playa Carmen · watch-only until summer 2027</div><div class="sub" id="asof"></div><div class="sub">Closed sales &amp; months of inventory: <b>unavailable</b> (no public closed-sales data in Costa Rica). Watch-only — no inquiries.</div></header>
 <div class="cards" id="cards"></div>
-<div class="bar"><input id="q" type="search" placeholder="Search address, area, notes"><select id="ft"><option value="">All</option><option>Home</option><option>Watch</option></select><select id="so"><option value="pa">Price ↑</option><option value="pd">Price ↓</option><option value="ppsf">$/m² ↑</option><option value="addr">Address</option></select></div>
+<div class="bar"><input id="q" type="search" placeholder="Search address, area, notes"><select id="ft"><option value="">All</option><option>Home</option><option>Watch</option></select><select id="so"><option value="nd" selected>Newest listed</option><option value="pa">Price ↑</option><option value="pd">Price ↓</option><option value="ppsf">$/m² ↑</option><option value="addr">Address</option></select></div>
 <section><h2>Watched board <span class="sub" id="cnt"></span></h2><div class="lst" id="lst"></div></section>
 <section><h2>Months of inventory</h2><div id="moi"></div></section>
 <section><h2>Price vs size</h2><div id="chart"></div><div class="note">Each dot is a listing with a published interior size ($ vs m²). Tap a dot for details.</div></section>
@@ -54,7 +54,9 @@ const D={
      "note": "For Sale $990k, unchanged"
     }
    ],
-   "url": "https://www.malpaisproperties.com/property/turnkey-4-bedroom-villa-in-santa-teresa-steps-to-beach-st-322"
+   "url": "https://www.malpaisproperties.com/property/turnkey-4-bedroom-villa-in-santa-teresa-steps-to-beach-st-322",
+   "listed_date": null,
+   "listed_date_source": "unavailable"
   },
   {
    "addr": "RE/MAX #0510 \u00b7 New 3BR, ocean/valley views, infinity pool",
@@ -77,7 +79,9 @@ const D={
      "note": "For Sale $675k, unchanged"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/stunning-newly-built-3-bedroom-modern-home-with-ocean-valley-jungle-views-and-infinity-pool/"
+   "url": "https://remax-puravida-cr.com/listings/stunning-newly-built-3-bedroom-modern-home-with-ocean-valley-jungle-views-and-infinity-pool/",
+   "listed_date": "2025-03-12",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #8425 \u00b7 Bohemian jungle ocean-view home",
@@ -100,7 +104,9 @@ const D={
      "note": "For Sale $625k, unchanged"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/bohemian-jungle-ocean-view-home/"
+   "url": "https://remax-puravida-cr.com/listings/bohemian-jungle-ocean-view-home/",
+   "listed_date": "2025-04-24",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "Villa Shemesh \u00b7 Ocean-view villa, Buenos Aires Rd",
@@ -123,7 +129,9 @@ const D={
      "note": "For Sale $1.0M, unchanged"
     }
    ],
-   "url": "https://realestategrupo.com/property/luxurious-ocean-view-villa-in-santa-teresa/"
+   "url": "https://realestategrupo.com/property/luxurious-ocean-view-villa-in-santa-teresa/",
+   "listed_date": "2025-01-07",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #734 \u00b7 Modern 3BR, prime Santa Teresa",
@@ -150,7 +158,9 @@ const D={
      "note": "Cut $989k \u2192 $950k (\u22123.9%)"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/modern-3-bedroom-home-in-prime-santa-teresa-location/"
+   "url": "https://remax-puravida-cr.com/listings/modern-3-bedroom-home-in-prime-santa-teresa-location/",
+   "listed_date": "2025-02-25",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #307 \u00b7 Hilltop home, partial ocean views",
@@ -173,7 +183,9 @@ const D={
      "note": "For Sale $999k, unchanged"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/new-stunning-modern-hilltop-home-with-partial-ocean-jungle-views/"
+   "url": "https://remax-puravida-cr.com/listings/new-stunning-modern-hilltop-home-with-partial-ocean-jungle-views/",
+   "listed_date": "2024-08-28",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #90901 \u00b7 Jungle surf house + casita",
@@ -196,7 +208,9 @@ const D={
      "note": "For Sale $950k"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/gorgeous-santa-teresa-jungle-surf-house-casita/"
+   "url": "https://remax-puravida-cr.com/listings/gorgeous-santa-teresa-jungle-surf-house-casita/",
+   "listed_date": "2026-04-17",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #337 \u00b7 Brand-new modern tropical home",
@@ -219,7 +233,9 @@ const D={
      "note": "Known, unchanged"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/brand-new-modern-tropical-home-in-santa-teresa/"
+   "url": "https://remax-puravida-cr.com/listings/brand-new-modern-tropical-home-in-santa-teresa/",
+   "listed_date": "2026-08-24",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #5507 \u00b7 Charming Mal Pa\u00eds 3BR villa, pool, walk to beach",
@@ -234,7 +250,9 @@ const D={
      "note": "For Sale $740k; listing URL recovered"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/charming-mal-pais-3-bedroom-home-with-pool-and-walk-to-beach-convenience/"
+   "url": "https://remax-puravida-cr.com/listings/charming-mal-pais-3-bedroom-home-with-pool-and-walk-to-beach-convenience/",
+   "listed_date": "2025-12-03",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   },
   {
    "addr": "RE/MAX #987 \u00b7 Ocean & valley view ridge home",
@@ -249,7 +267,9 @@ const D={
      "note": "For Sale $899k; listing URL recovered"
     }
    ],
-   "url": "https://remax-puravida-cr.com/listings/ocean-and-valley-view-home-in-santa-teresa/"
+   "url": "https://remax-puravida-cr.com/listings/ocean-and-valley-view-home-in-santa-teresa/",
+   "listed_date": "2026-04-17",
+   "listed_date_source": "listing page schema datePublished (page publish date)"
   }
  ],
  "moi": {
@@ -335,11 +355,11 @@ const res=B.filter(b=>b.sf),pp=res.map(b=>b.ppsf).filter(Boolean).sort((a,b)=>a-
 $('#cards').innerHTML=mc(M.seg,'MOI · ≤$1M 3bd/2ba pool homes')+mc(M.town,'MOI · whole Santa Teresa market')+
 `<div class="card"><div class="l">Titled shortlist</div><div class="v">${B.filter(b=>b.type.startsWith('Home')).length}</div><div class="d">${B.filter(b=>b.type.startsWith('Watch')).length} watch-only (title unknown/borderline)</div></div><div class="card"><div class="l">Median $/m²</div><div class="v">$${pp.length?pp[Math.floor(pp.length/2)].toLocaleString():'—'}</div><div class="d">listings with interior m²</div></div>`;
 $('#moi').innerHTML=[['≤$1M finished 3bd/2ba pool',M.seg],['Whole Santa Teresa market',M.town]].map(([l,x])=>`<p><b>${l}:</b> ${x.value==null?'<b>Unavailable</b>':x.value.toFixed(1)+' months'} <span class="rate ${rc(x.rating)}">${x.rating||'n/a'}</span></p><div class="kv">${x.inputs.map(r=>`<b>${esc(r[0])}</b><span>${esc(r[1])}</span>`).join('')}</div><div class="note">${esc(x.note)}</div>`).join('<hr style="border-color:#2c3360">')+`<div class="note">Thresholds: &lt;4 mo seller's · 4–6 neutral · &gt;6 buyer's. Sources: ${M.sources.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(' · ')}</div>`;
-function openD(i){const b=B[i];$('#sh').innerHTML=`<button class="x" onclick="cl()" aria-label="Close">×</button><div class="s">${esc(b.status)}</div><h2>${esc(b.addr)}</h2><div class="li"><span class="p">${money(b.price)}</span></div><div class="kv"><b>Type</b><span>${esc(b.type)}</span><b>Area</b><span>${esc(b.area)}</span><b>$/m²</b><span>${b.ppsf?'$'+b.ppsf.toLocaleString():'—'}</span><b>Notes</b><span>${esc(b.fit)}</span>${(b.history||[]).map(h=>`<b>${esc(h.date)}</b><span>${esc(h.note)}</span>`).join('')}</div><a class="btn pr" href="${esc(b.url)}" target="_blank" rel="noopener">Open listing ↗</a>`;$('#dr').classList.add('on')}
+function openD(i){const b=B[i];$('#sh').innerHTML=`<button class="x" onclick="cl()" aria-label="Close">×</button><div class="s">${esc(b.status)}</div><h2>${esc(b.addr)}</h2><div class="li"><span class="p">${money(b.price)}</span></div><div class="kv"><b>Type</b><span>${esc(b.type)}</span><b>Area</b><span>${esc(b.area)}</span><b>Listed</b><span>${b.listed_date?esc(b.listed_date)+' ('+esc(b.listed_date_source)+')':'Unavailable'}</span><b>$/m²</b><span>${b.ppsf?'$'+b.ppsf.toLocaleString():'—'}</span><b>Notes</b><span>${esc(b.fit)}</span>${(b.history||[]).map(h=>`<b>${esc(h.date)}</b><span>${esc(h.note)}</span>`).join('')}</div><a class="btn pr" href="${esc(b.url)}" target="_blank" rel="noopener">Open listing ↗</a>`;$('#dr').classList.add('on')}
 function cl(){$('#dr').classList.remove('on')}$('#dr').onclick=e=>{if(e.target.id=='dr')cl()};
 function rb(){const q=$('#q').value.toLowerCase(),ft=$('#ft').value,so=$('#so').value;let r=B.filter(b=>(!ft||b.type.startsWith(ft))&&(!q||JSON.stringify(b).toLowerCase().includes(q)));
-r.sort((a,b)=>so=='pa'?a.price-b.price:so=='pd'?b.price-a.price:so=='ppsf'?(a.ppsf??1e9)-(b.ppsf??1e9):a.addr.localeCompare(b.addr));$('#cnt').textContent=r.length+' shown';
-$('#lst').innerHTML=r.map(b=>`<div class="li"><div class="top"><span class="ad">${esc(b.addr)}</span><span class="p">${money(b.price)}</span></div><div class="ty">${esc(b.type)}${b.ppsf?' · $'+b.ppsf.toLocaleString()+'/m²':''}</div><div class="ty">${esc(b.area)}</div><div class="acts"><button class="btn" onclick="openD(${b.i})">Details</button><a class="btn pr" href="${esc(b.url)}" target="_blank" rel="noopener">Listing ↗</a></div></div>`).join('')}
+r.sort((a,b)=>so=='nd'?((b.listed_date||'').localeCompare(a.listed_date||'')||(a.listed_date?0:0)):so=='pa'?a.price-b.price:so=='pd'?b.price-a.price:so=='ppsf'?(a.ppsf??1e9)-(b.ppsf??1e9):a.addr.localeCompare(b.addr));$('#cnt').textContent=r.length+' shown';
+$('#lst').innerHTML=r.map(b=>`<div class="li"><div class="top"><span class="ad">${esc(b.addr)}</span><span class="p">${money(b.price)}</span></div><div class="ty">${esc(b.type)}${b.ppsf?' · $'+b.ppsf.toLocaleString()+'/m²':''}</div><div class="ty">${esc(b.area)} · Listed ${b.listed_date?esc(b.listed_date):'date unavailable'}</div><div class="acts"><button class="btn" onclick="openD(${b.i})">Details</button><a class="btn pr" href="${esc(b.url)}" target="_blank" rel="noopener">Listing ↗</a></div></div>`).join('')}
 ['#q','#ft','#so'].forEach(s=>$(s).oninput=rb);rb();
 (function(){const W=360,H=240,p={l:46,r:10,t:10,b:30},pts=res.filter(b=>b.sf);const xM=Math.max(...pts.map(b=>b.sf))*1.1,yM=1.2e6;const x=v=>p.l+v/xM*(W-p.l-p.r),y=v=>H-p.b-v/yM*(H-p.t-p.b);let g='';
 for(let i=0;i<=3;i++){const v=yM*i/3;g+=`<line x1="${p.l}" x2="${W-p.r}" y1="${y(v)}" y2="${y(v)}" stroke="#2c3360"/><text x="${p.l-4}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#9aa0bd">$${(v/1e6).toFixed(1)}M</text>`}
